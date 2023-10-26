@@ -7,7 +7,16 @@
     "eslintplugin",
     "eslint-plugin"
   ],
-  "author": "deadexport",
+  "author": "Xiaobo2020",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xiaobo2020/eslint-plugin-deadexport.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Xiaobo2020/eslint-plugin-deadexport/issues"
+  },
+  "homepage": "https://github.com/Xiaobo2020/eslint-plugin-deadexport#readme",
   "main": "./lib/index.js",
   "exports": "./lib/index.js",
   "scripts": {
@@ -36,6 +45,5 @@
   },
   "peerDependencies": {
     "eslint": ">=7"
-  },
-  "license": "ISC"
+  }
 }
