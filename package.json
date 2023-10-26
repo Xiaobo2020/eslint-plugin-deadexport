@@ -1,0 +1,41 @@
+{
+  "name": "eslint-plugin-deadexport",
+  "version": "0.0.1",
+  "description": "Find out the dead export variables",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "deadexport",
+  "main": "./lib/index.js",
+  "exports": "./lib/index.js",
+  "scripts": {
+    "lint": "npm-run-all \"lint:*\"",
+    "lint:eslint-docs": "npm-run-all \"update:eslint-docs -- --check\"",
+    "lint:js": "eslint .",
+    "test": "mocha tests --recursive",
+    "update:eslint-docs": "eslint-doc-generator"
+  },
+  "dependencies": {
+    "espree": "7.3.1",
+    "esutils": "2.0.3",
+    "lodash": "4.17.21",
+    "requireindex": "1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-doc-generator": "1.4.3",
+    "eslint-plugin-eslint-plugin": "5.1.1",
+    "eslint-plugin-node": "11.1.0",
+    "mocha": "10.2.0",
+    "npm-run-all": "4.1.5"
+  },
+  "engines": {
+    "node": "^14.16.0 || ^16.14.0 || >= 18.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=7"
+  },
+  "license": "ISC"
+}
